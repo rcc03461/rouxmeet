@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <% include partials/template/head.ejs %>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+   <div class="container">
+<!--    <% include partials/template/header.ejs %>-->
+<!--    <h1><%= title %></h1>-->
+<!--    <p>Welcome to <%= title %></p>-->
+<!--    <% include partials/template/footer.ejs %>-->
+   
+   <div class="app_logo"><img src="http://upload.wikimedia.org/wikipedia/en/2/2d/SRU-Logo-Transparent.png" alt=""></div>
+   <h1>App.JS - Login</h1>
+   
+    <form action="">
+    <div class="login_form">
+        <div class="username">
+        <i class="fa fa-user fa-2x"></i><input type="text" placeholder="Surname">
+        </div>
+        <div class="password">
+        <i class="fa fa-unlock-alt fa-2x"></i><input type="text" placeholder="Password">
+        </div>
+        <button class="login_btn ">LOGIN</button>
+    
+    </div>
+    </form>
+    <div class="login_function">
+        <a href=""><div class="new_menber">New Member</div></a>
+        <a href=""><div class="forgot">Forgot Password?</div></a>
+    </div>
+    
+    <h4>OR</h4>
+    
+    <div class="login_with_social">
+        <h4>Login with</h4>
+        <div class="social_register">
+            <a href=""><div class="icon_block"><i class="fa fa-facebook"></i></div></a>
+            <a href=""><div class="icon_block"><i class="fa fa-twitter"></i></div></a>
+        </div>
+    </div>
+    
+    
+    
+    </div>
+    <% include partials/template/js.ejs %>
   </body>
 </html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+     <% include partials/template/head.ejs %>
+  </head>
+  <body>
+   <div class="container">
+    <% include partials/template/header.ejs %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% include partials/template/footer.ejs %>
+    </div>
+    <% include partials/template/js.ejs %>
+  </body>
+</html>
+-->

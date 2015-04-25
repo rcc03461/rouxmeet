@@ -1,8 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url(http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/wallpaper-black-hd-hd-wallpapers.jpg)
 }
 
 a {
   color: #00B7FF;
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder{
+   color: aliceblue;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: aliceblue;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: aliceblue;  
+}
+:-ms-input-placeholder {  
+   color: aliceblue;  
+}
+
+
+.container{
+    font-family: 'Raleway', sans-serif;
+    min-width: 400px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+
+
+/*Login~~~~~~~~~~*/
+h1{
+    font-size: 15x;
+    text-align: center;
+}
+
+.app_logo {
+    width: 150px;
+    margin: auto;
+}
+.app_logo img {
+    width: 150px;
+    height: auto;
+}
+.container form {
+}
+.container .login_form {
+    display: flex;
+    flex-direction: column;
+    
+}
+.container .login_form input{
+    margin-left: 10px;
+    border: 0;
+    background:transparent;
+    font-size: 20px;
+}
+.container .login_form input:focus{
+    outline: 0;
+}
+.container .username,
+.container .password{
+    margin: 10px 0 0;
+    border-bottom: aliceblue 1px solid;
+}
+.container .username .fa {
+    
+}
+.container .username input {
+    padding: 3px;
+    margin-bottom: 7px;
+    
+}
+.container .password {
+
+}
+.container .password .fa {
+}
+.container .password input {
+    padding: 3px;
+    margin-bottom: 7px;
+}
+.container button.login_btn {
+    margin: 15px 0;
+    color: inherit;
+    font-size: inherit;
+    border: 0;
+    line-height: 45px;
+    border-radius: 50px;
+    background-color: #AF0F3B;
+}
+.container button.login_btn:focus{
+    outline: 0;
+}
+.container .login_function {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .new_menber {
+}
+.container .forgot {
+}
+.container .login_with_social {
+}
+.container h4 {
+    text-align: center;
+}
+.container .social_register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .icon_block {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: #333E44;
+    border-radius: 50%;
+}
+.container .icon_block .fa {
+}
+.container .icon_block .fa.container .icon_block .fa {
+}
+.container .icon_block .fa
+
+.h4{
+    text-align: center;
 }
