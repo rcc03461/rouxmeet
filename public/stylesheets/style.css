@@ -1,34 +1,41 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+.hide{
+    display: none;
+}
 
 body {
-    padding: 50px;
+    margin: 0;
+    padding: 0px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-image: url(http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/wallpaper-black-hd-hd-wallpapers.jpg)
+/*    background-image: url(http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/wallpaper-black-hd-hd-wallpapers.jpg)*/
+    background-image: url(http://www.hdwallpapersinn.com/wp-content/uploads/2014/09/Free-Android-Wallpapers-17.jpg)
 }
 
 a {
-  color: #00B7FF;
+    color: aliceblue;
     text-decoration: none;
 }
 
 ::-webkit-input-placeholder{
-   color: aliceblue;
+   color: #aaaaaa;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: aliceblue;  
+   color: #aaaaaa;  
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: aliceblue;  
+   color: #aaaaaa;  
 }
 :-ms-input-placeholder {  
-   color: aliceblue;  
+   color: #aaaaaa; 
 }
 
 
 .container{
+    padding-left: 25px;
+    padding-right: 25px;
     font-family: 'Raleway', sans-serif;
-    min-width: 400px;
-    width: 100%;
+    min-width: 300px;
+    width: 80%;
     max-width: 900px;
     margin: auto;
     color: aliceblue;
@@ -45,6 +52,7 @@ h1{
 }
 
 .app_logo {
+    padding-top: 50px;
     width: 150px;
     margin: auto;
 }
@@ -69,17 +77,33 @@ h1{
     outline: 0;
 }
 .container .username,
-.container .password{
+.container .password,
+.container .email{
     margin: 10px 0 0;
     border-bottom: aliceblue 1px solid;
-}
-.container .username .fa {
+    width: 100%;
+/*    background: red;*/
+    display: flex;
+    flex-direction: row;
+/*    flex-wrap: wrap;*/
     
 }
-.container .username input {
+.container .username .fa,
+.container .password .fa,
+.container .email .fa
+{
+    text-align: center;
+/*    background-color: yellow;*/
+    min-width: 50px;
+}
+.container .username input,
+.container .password input,
+.container .email input
+{
+/*    background-color: yellow;*/
+    flex: 1 100%;
     padding: 3px;
     margin-bottom: 7px;
-    
 }
 .container .password {
 
@@ -87,8 +111,6 @@ h1{
 .container .password .fa {
 }
 .container .password input {
-    padding: 3px;
-    margin-bottom: 7px;
 }
 .container button.login_btn {
     margin: 15px 0;
@@ -106,10 +128,11 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px 0 15px;
 }
-.container .new_menber {
-}
+.container .new_menber,
 .container .forgot {
+    cursor: pointer;
 }
 .container .login_with_social {
 }
@@ -127,7 +150,7 @@ h1{
     line-height: 60px;
     width: 60px;
     height: 60px;
-    background-color: #333E44;
+    background-color: #1684c1;
     border-radius: 50%;
 }
 .container .icon_block .fa {
@@ -138,4 +161,35 @@ h1{
 
 .h4{
     text-align: center;
+}
+
+
+
+/*line-on-side*/
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+/*  border-bottom: 1px solid white;*/
+  border-top: 1px solid white;
+  top: 5px;
+  width: 150px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }

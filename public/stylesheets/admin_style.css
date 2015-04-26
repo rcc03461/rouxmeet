@@ -1,0 +1,65 @@
+.admin_container{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Raleway', sans-serif;
+    min-width: 300px;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+/*    background-color: #ffffff;*/
+}
+
+.admin_header {
+    margin: 0;
+    position: fixed;
+    width: 220px;
+    left: 0;
+/*    -webkit-box-shadow:inset -10px 0 10px -5px #888;*/
+/*            box-shadow:inset -10px 0 10px -5px #888;*/
+}
+.admin_header section {
+}
+.admin_header .nav_logo {
+    width: 150px;
+/*    background: red;*/
+    margin: auto;
+    padding: 0;
+}
+.admin_header img {
+    margin: 0;
+    width: 150px;
+}
+.admin_header .admin_menu {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+/*    background-color: #e5ddd2;*/
+}
+.admin_header .admin_menu div {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+/*    background-color: aqua;*/
+}
+.admin_header .admin_menu div:hover {
+    border-radius: 50px;
+    background-color: #FF5353;
+}
+.admin_header a {
+/*    color: #6a6767;*/
+}
+
+.admin_header a .fa {
+
+    width: 35px;
+    text-align: center;
+}
+.admin_header a .fa.admin_header a .fa {
+}
+.admin_header a .fa.admin_header span {
+}

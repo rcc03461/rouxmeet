@@ -13,30 +13,48 @@
    <div class="app_logo"><img src="http://upload.wikimedia.org/wikipedia/en/2/2d/SRU-Logo-Transparent.png" alt=""></div>
    <h1>App.JS - Login</h1>
    
-    <form action="">
-    <div class="login_form">
+    <form action="" class="animated bounce">
+    <div class="login_form" id="login">
         <div class="username">
-        <i class="fa fa-user fa-2x"></i><input type="text" placeholder="Surname">
+        <span><i class="fa fa-user fa-lg"></i></span><input type="text" placeholder="Surname">
         </div>
         <div class="password">
-        <i class="fa fa-unlock-alt fa-2x"></i><input type="text" placeholder="Password">
+        <span><i class="fa fa-unlock-alt fa-lg"></i></span><input type="text" placeholder="Password">
         </div>
         <button class="login_btn ">LOGIN</button>
     
     </div>
     </form>
+    <form action="" id="register" class="hide animated bounce" >
+    <div class="login_form">
+        <div class="username">
+        <span><i class="fa fa-user fa-lg"></i></span><input type="text" placeholder="Username">
+        </div>
+        <div class="password">
+        <span><i class="fa fa-unlock-alt fa-lg"></i></span><input type="text" placeholder="Password">
+        </div>
+        <div class="password">
+        <span><i class="fa fa-unlock-alt fa-lg"></i></span><input type="text" placeholder="Confirm Password">
+        </div>
+        <div class="email">
+        <span><i class="fa fa-envelope-o fa-lg"></i></span><input type="text" placeholder="Password">
+        </div>
+        <button class="login_btn ">REGISTER</button>
+    
+    </div>
+    </form>
     <div class="login_function">
-        <a href=""><div class="new_menber">New Member</div></a>
-        <a href=""><div class="forgot">Forgot Password?</div></a>
+        <div class="new_menber">New Member</div>
+        <div class="forgot">Forgot Password?</div>
     </div>
     
-    <h4>OR</h4>
+    <div class="fancy"><span>OR</span></div>
     
     <div class="login_with_social">
         <h4>Login with</h4>
         <div class="social_register">
-            <a href=""><div class="icon_block"><i class="fa fa-facebook"></i></div></a>
-            <a href=""><div class="icon_block"><i class="fa fa-twitter"></i></div></a>
+            <a href=""><div class="icon_block"><span><i class="fa fa-facebook"></i></span></div></a>
+            <a href=""><div class="icon_block"><span><i class="fa fa-twitter"></i></span></div></a>
         </div>
     </div>
     
@@ -46,22 +64,3 @@
     <% include partials/template/js.ejs %>
   </body>
 </html>
-
-
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-     <% include partials/template/head.ejs %>
-  </head>
-  <body>
-   <div class="container">
-    <% include partials/template/header.ejs %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <% include partials/template/footer.ejs %>
-    </div>
-    <% include partials/template/js.ejs %>
-  </body>
-</html>
--->
